@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello World!!!</title>
+
+
+
+</head>
+
+<body>
+<form name="revString" onsubmit="reverseString()">
+Enter the string to be reversed: <input type="text" name="stringIn" id="stringIn"></input>
+<input type="Submit" value="submit"></input>
+</form>
+
+<script>
+function reverseString(){
+	var inString = document.getElementById("stringIn").value;
+	var splitString = inString.split("");
+	var revString = splitString.reverse();
+	var outString = revString.join("");
+	document.writeln(outString);
+}
+</script>
+
+</body>
+
+</html>
