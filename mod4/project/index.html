@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/D9DB3420-48BC-6944-85EF-4AB44B3AD519/main.js" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://ff.kis.v2.scr.kaspersky-labs.com/915DA3B44BA4-FE58-4496-CB84-0243BD9D/abn/main.css"/><script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+
+  Enter a String: <input type="text" id="stringIn"></input>
+
+  <button class="ui-btn ui-corner-all ui-mini" onclick="displayStr()">Display The String!!!!</button>
+	<div id="stringDis"></div>
+      <script>
+          function displayStr(){
+			var inString = document.getElementById("stringIn").value;
+			var resDisplay = document.getElementById("stringDis");
+			
+			
+			if ((inString == "student") || (inString == "Student")){
+				resDisplay.innerHTML="<h2>I am a Rasmussen Student!</h2>";
+			} else if ((inString == "staff") || (inString == "Staff")){
+				resDisplay.innerHTML="<h2>I am a Rasmussen Staff Member!</h2>"
+			} else {
+				resDisplay.innerHTML="<h2>"+inString+"</h2>";
+			}
+			
+		  }
+      </script>
+</div>
+</body>
+</html>
