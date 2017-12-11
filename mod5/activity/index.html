@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello World!!!</title>
+
+
+
+</head>
+
+<body>
+<form name="contactDetail" onsubmit="getContact()">
+Enter First Name: <input type="text" name="fName" id="fName"></input> </br>
+Enter Last Name: <input type="text" name="lName" id="lName"></input> </br>
+Enter Address: <input type="text" name="streetAddress" id="streetAddress"></input></br>
+Enter City: <input type="text" name="city" id="city"></input></br>
+Enter State: <input type="text" name="state" id="state"></input></br>
+<input type="Submit" value="submit"></input></br>
+</form>
+
+<script>
+function getContact(){
+	var fName = document.getElementById("fName").value;
+	var lName = document.getElementById("lName").value;
+	var streetAddress = document.getElementById("streetAddress").value;
+	var city = document.getElementById("city").value;
+	var state = document.getElementById("state").value;
+	document.writeln(fName + "</br>" + lName + "</br>" + streetAddress + "</br>" + city + "</br>" + state + "</br>");
+}
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello World!!!</title>
+
+
+
+</head>
+
+<body>
+
+Enter First Name: <input type="text" name="fName" id="fName"></input> </br>
+Enter Last Name: <input type="text" name="lName" id="lName"></input> </br>
+Enter Address: <input type="text" name="streetAddress" id="streetAddress"></input></br>
+Enter City: <input type="text" name="city" id="city"></input></br>
+Enter State: <input type="text" name="state" id="state"></input></br>
+<button onclick="getContact()">Display The Contact!!!!</button>
+
+<div id="contactDiv">
+<table id='contactTable' border=1><tr><td>First Name</td><td>Last Name</td><td>Address</td><td>City</td><td>State</td></tr></table>
+</div>
+<script>
+
+function getContact(){
+	var CT = document.getElementById("contactTable");
+	var fName = document.getElementById("fName").value;
+	var lName = document.getElementById("lName").value;
+	var streetAddress = document.getElementById("streetAddress").value;
+	var city = document.getElementById("city").value;
+	var state = document.getElementById("state").value;
+	CT.innerHTML += "<tr><td>"+fName+"</td><td>"+lName+"</td><td>"+streetAddress+"</td><td>"+city+"</td><td>"+state+"</td></tr>";
+	
+}
+</script>
+
+</body>
+
+</html>
